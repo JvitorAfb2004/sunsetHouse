@@ -2,26 +2,33 @@
 <html lang="pt-BR">
 
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5NBKL24G');</script>
-<!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5NBKL24G');</script>
+  <!-- End Google Tag Manager -->
+
+
   <title>Sunset House</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="css/styles2.css">
+
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NBKL24G"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
+
   <nav class="navbar">
     <div class="navbar-logo">
       <!-- Ícone pôr do sol -->
@@ -60,34 +67,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Dobra 1 – Herói -->
   <section class="section-image-house">
     <div class="background-overlay"></div> <!-- camada de fundo opaca -->
-
-    <div class="text">
-      <h2>Onde cada pôr do sol marca um novo começo.</h2>
-      <p>Imagine chegar em casa e ser recebido por uma vista de tirar o fôlego: o mar, o Corcovado, a Pedra da Gávea e o
-        Pão de Açúcar se encontram no horizonte.</p><br>
-      <strong>Tudo que você imagina sobre conforto de um lar e a exclusividade que você merece.</strong><br><br>
-      <i class="fas fa-map-marker-alt"></i>
-      <span>Charitas, Niterói – A melhor vista da cidade, em uma localização privilegiada.</span><br>
-      <a href="https://wa.me/5521975770747" class="btn">AGENDE SUA VISITA</a>
-    </div>
-
     <div class="image">
       <img src="assets/carrossel/007.JPG" alt="Imagem da Casa Sunset">
     </div>
+    <div class="text">
+      <h2>Onde cada pôr do sol marca um novo começo.</h2>
+      <p class="texto-mobile" id="text-mobile">Imagine chegar em casa e ser recebido por uma vista de tirar o fôlego: o
+        mar, o Corcovado, a Pedra da Gávea e o
+        Pão de Açúcar se encontram no horizonte. <br>
+        Tudo que você imagina sobre conforto de um lar e a exclusividade que você merece.</p> <br>
+      <!--  <i class="fas fa-map-marker-alt"></i>
+    <span>Charitas, Niterói – A melhor vista da cidade, em uma localização privilegiada.</span><br>-->
+      <a href="https://wa.me/5521975770747" class="btn">AGENDE SUA VISITA</a>
+    </div>
+
+
   </section>
 
 
   <!-- Dobra 2 – Apresentação emocional + diferenciação -->
   <section class="section reverse">
-    <div class="text">
-      <h2>O equilíbrio entre aconchego e sofisticação que transforma uma casa em lar.</h2>
-      <blockquote class="">
-        <p style=" font-size: 1.5rem;">Design contemporâneo assinado pelo arquiteto das celebridades.</p>
-      </blockquote>
-    </div>
     <div class="image">
       <img src="assets/carrossel/005.JPG" alt="Imagem da Casa Sunset">
     </div>
+    <div class="text">
+      <h2>O equilíbrio entre aconchego e sofisticação que transforma uma casa em lar.</h2>
+      <blockquote class="">
+        <p style=" font-size: 1.4rem;">Design contemporâneo assinado pelo arquiteto das celebridades.</p>
+      </blockquote>
+    </div>
+
   </section>
 
   <!-- Dobra 3 – Estrutura + Benefícios -->
@@ -101,15 +110,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="animated-list">
 
 
-          <li><strong>1º Pavimento:</strong> Sala com pé direito duplo,
+          <li id="pavimento"><strong>1º Pavimento:</strong> Sala com pé direito duplo,
             Elevador,
             Sala de estar com cozinha integrada,
             Cozinha de apoio fechada,
             Área gourmet completa,
             Piscina com borda infinita e vista panorâmica,
             Hidromassagem aquecida e sauna</li>
-          <li><strong>2º Pavimento:</strong> 4 suítes, sendo 1 master com 50m² e varanda panorâmica</li>
-          <li><strong>3º Pavimento:</strong> Pub,
+          <li id="pavimento"><strong>2º Pavimento:</strong> 4 suítes, sendo 1 master com 50m² e varanda panorâmica</li>
+          <li id="pavimento"><strong>3º Pavimento:</strong> Pub,
             Salão de jogos,
             Cinema,
             Academia,
@@ -137,37 +146,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Dobra 4 – Benefícios e estilo de vida -->
   <section class="section reverse">
+    <div class="image">
+      <img src="assets/carrossel/008.JPG" alt="Imagem dos ambientes internos das casas">
+    </div>
     <div class="text">
       <h2>Mais que um imóvel. Um estilo de vida.</h2>
       <p>Manhãs tranquilas, canto dos pássaros e brisa do mar. A gratidão a cada pôr do sol, noites estreladas com
         jantares sofisticados e a satisfação de viver tudo isso dentro do seu lar.</p>
       <br>
-      <ul>
 
 
-
-
-        <li>
-          <h3><strong>Privacidade</strong></h3>
-        </li>
-        <li>
-          <h3><strong>Sofisticação</strong></h3>
-        </li>
-        <li>
-          <h3><strong>Bem-estar diário</strong></h3>
-        </li>
-      </ul>
-      <blockquote class="">
-        <p>Não é só sobre ter uma casa. É sobre viver um novo capítulo da sua história.
-      </blockquote>
     </div>
-    <div class="image">
-      <img src="assets/carrossel/008.JPG" alt="Imagem dos ambientes internos das casas">
-    </div>
+
   </section>
 
   <!-- Dobra 5 – Prova social / convite emocional -->
-  <section class="section" style="margin-top: -10%;">
+  <section class="section" style="margin-top: -5%;">
     <div class="text">
       <h2>Assinatura do renomado Estúdio LF</h2>
       <p>O Estúdio LF traduz em cada projeto a imponência e o luxo que consagraram seu nome entre as maiores referências
@@ -175,36 +169,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </p>
       <a href="https://wa.me/5521975770747" class="btn">AGENDAR VISITA AGORA</a>
     </div>
-    <div class="image">
-     
-    </div>
-  </section>       <h2 class="titulo-centralizado" style="font-family: Arial, Helvetica, sans-serif;">O escritório mais desejado entre as celebridades.</h2>
 
-  <section class="section reverse" style="margin-top: -5%;">
+  </section>
+  <h2 class="titulo-centralizado" style="font-family: Arial, Helvetica, sans-serif;">O escritório mais desejado entre as
+    celebridades.</h2>
+
+  <section class="section reverse" style="margin-top: -1%;">
     <div class="text">
- <h2 style="font-size: 30px;"> Nomes como <strong>Roberto Justus</strong>, <strong>Ana
-          Paula Siebert</strong>, <strong>Neymar</strong> e <strong>Philippe Coutinho</strong> confiaram ao Studio LF a
-        assinatura dos projetos dos seus sonhos.</h2>
-      
+      <h2 style="font-size: 30px;">Projeto assinado pelo arquiteto das casas de <strong>Neymar<strong></strong>,
+          Philippe Coutinho e
+          Roberto Justus</strong></h2>
+
       <br>
 
-    <p style="font-size: 25px;">O Estúdio LF, escritório de arquitetura premiado, é símbolo de imponência e luxo.</p style="font-size: 25px;">
-   <br>   <ul>
+      <p>O Estúdio LF, escritório de arquitetura premiado, é símbolo de imponência e luxo.</p>
+      <br>
+      <ul class="apenas-desktop">
 
 
 
 
         <li>
-          <h3><strong>Atendimento personalizado</strong></h3>
+          <p>Atendimento personalizado</p>
         </li>
         <li>
-          <h3><strong>Projetos exclusivos, sem padronização</strong></h3>
+          <p>Projetos exclusivos, sem padronização</p>
         </li>
         <li>
-          <h3><strong>Entrega acompanhada do início ao fim</strong></h3>
+          <p>Entrega acompanhada do início ao fim</p>
         </li>
       </ul><br>
-      
+
 
     </div>
     <div class="image">
@@ -217,55 +212,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="gallery-item" data-img="assets/carrossel/007.JPG"
         style="background-image: url('assets/carrossel/007.JPG');"></div>
-         <div class="gallery-item" data-img="assets/carrossel/008.JPG"
+      <div class="gallery-item" data-img="assets/carrossel/008.JPG"
         style="background-image: url('assets/carrossel/008.JPG');"></div>
-       <div class="gallery-item" data-img="assets/carrossel/andar-1.jpg"
+      <div class="gallery-item" data-img="assets/carrossel/andar-1.jpg"
         style="background-image: url('assets/carrossel/andar-1.jpg');"></div>
-       <div class="gallery-item" data-img="assets/carrossel/006.JPG"
+      <div class="gallery-item" data-img="assets/carrossel/006.JPG"
         style="background-image: url('assets/carrossel/006.JPG');"></div>
-        <div class="gallery-item" data-img="assets/carrossel/005.JPG"
+      <div class="gallery-item" data-img="assets/carrossel/005.JPG"
         style="background-image: url('assets/carrossel/005.JPG');"></div>
 
-        <div class="gallery-item" data-img="assets/carrossel/011.JPG"
+      <div class="gallery-item" data-img="assets/carrossel/011.JPG"
         style="background-image: url('assets/carrossel/011.JPG');"></div>
-         <div class="gallery-item" data-img="assets/carrossel/009.JPG"
+      <div class="gallery-item" data-img="assets/carrossel/009.JPG"
         style="background-image: url('assets/carrossel/009.JPG');"></div>
       <div class="gallery-item" data-img="assets/carrossel/010.JPG"
         style="background-image: url('assets/carrossel/010.JPG');"></div>
-         <!--Planta 1-->
+      <!--Planta 1-->
 
-        <div class="gallery-item" data-img="assets/carrossel/andar-2.jpg"
+      <div class="gallery-item" data-img="assets/carrossel/andar-2.jpg"
         style="background-image: url('assets/carrossel/andar-2.jpg');"></div>
 
-        <div class="gallery-item" data-img="assets/carrossel/quarto-andar-2.jpg"
+      <div class="gallery-item" data-img="assets/carrossel/quarto-andar-2.jpg"
         style="background-image: url('assets/carrossel/quarto-andar-2.jpg');"></div>
 
-        <div class="gallery-item" data-img="assets/carrossel/closet-andar-2.jpg"
+      <div class="gallery-item" data-img="assets/carrossel/closet-andar-2.jpg"
         style="background-image: url('assets/carrossel/closet-andar-2.jpg');"></div>
-        <div class="gallery-item" data-img="assets/carrossel/closet-andar-2-angulo.jpg"
+      <div class="gallery-item" data-img="assets/carrossel/closet-andar-2-angulo.jpg"
         style="background-image: url('assets/carrossel/closet-andar-2-angulo.jpg');"></div><!--Planta 2-->
 
-        <div class="gallery-item" data-img="assets/carrossel/andar-3.jpg"
+      <div class="gallery-item" data-img="assets/carrossel/andar-3.jpg"
         style="background-image: url('assets/carrossel/andar-3.jpg');"></div>
-         <div class="gallery-item" data-img="assets/carrossel/004.JPG"
+      <div class="gallery-item" data-img="assets/carrossel/004.JPG"
         style="background-image: url('assets/carrossel/004.JPG');"></div>
-        <div class="gallery-item" data-img="assets/carrossel/003.JPG"
+      <div class="gallery-item" data-img="assets/carrossel/003.JPG"
         style="background-image: url('assets/carrossel/003.JPG');"></div>
-        <div class="gallery-item" data-img="assets/carrossel/002.JPG"
+      <div class="gallery-item" data-img="assets/carrossel/002.JPG"
         style="background-image: url('assets/carrossel/002.JPG');"></div>
-        <!--Planta 3-->
+      <!--Planta 3-->
 
       <div class="gallery-item" data-img="assets/carrossel/001.JPG"
         style="background-image: url('assets/carrossel/001.JPG');"></div>
-      
-      
-     
-      
-     
-      
-     
-      
-      
+
+
+
+
+
+
+
+
+
     </div>
     <blockquote class="">
       <p>Clique nas imagens para visualizar
@@ -364,15 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="https://wa.me/5521975770747" class="floating-whatsapp">
     <i class="fab fa-whatsapp"></i>
   </a>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XRTNB0Q9XS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-XRTNB0Q9XS');
-</script>
   <script src="js/script.js"></script>
 </body>
 

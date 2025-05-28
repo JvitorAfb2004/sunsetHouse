@@ -16,6 +16,13 @@ body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   color: #333;
+  background-color: #fcf9f4;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  font-size: 10px;
 }
 
 .section {
@@ -26,6 +33,7 @@ body {
   gap: 50px;
   flex-wrap: wrap;
 }
+
 
 .section-image-house {
   position: relative;
@@ -47,11 +55,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/carrossel/007.JPG');
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity:  0.4 ; /* controle da opacidade */
+  opacity: 0.4;
+  /* controle da opacidade */
   z-index: 0;
 }
 
@@ -63,7 +72,7 @@ body {
 }
 
 .section-image-house .image img {
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   border-radius: 10px;
 }
@@ -84,18 +93,20 @@ body {
 }
 
 .text p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   max-width: 600px;
 }
+
 blockquote {
-    border-left: 4px solid var(--primary-color);
-    padding-left: 20px;
-    font-style: italic;
-    margin: 30px 0;
-    color: #555555;
-    font-size: 1.7rem;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+  font-style: italic;
+  margin: 30px 0;
+  color: #555555;
+  font-size: 1.2rem;
 }
-.descricao{
+
+.descricao {
   font-size: 1.7rem;
 }
 
@@ -109,7 +120,7 @@ blockquote {
 .image img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .btn {
@@ -123,6 +134,37 @@ blockquote {
 }
 
 @media (max-width: 900px) {
+  .text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  #pavimento {
+    font-size: 1rem;
+
+    
+
+  }
+  .text p {
+      font-size: 1.3rem;
+      max-width: 600px;
+    }
+
+  #text-mobile {
+    font-size: 1rem;
+  }
+
+  .image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+
+}
+
 
   .section,
   .section.reverse {
@@ -220,7 +262,7 @@ section.dobra {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   /* <<< margenzinha entre as seções */
 
 
@@ -318,12 +360,12 @@ section.dobra {
 
 .estrutura-detalhada {
   padding: 80px 5%;
-  background-color: #fdfdfd;
+  background-color: #fcf9f4;
 }
 
 .titulo-centralizado {
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2rem;
   margin-bottom: 60px;
 }
 
@@ -336,9 +378,25 @@ section.dobra {
 }
 
 .card-conteudo h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   color: #333;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-conteudo p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#pavimento {
+  font-size: 1.2rem;
+}
+
+.apenas-desktop {
+  display: block;
 }
 
 .animated-list {
@@ -383,7 +441,7 @@ section.dobra {
 
 .galeria img {
   width: 100%;
-  max-width: 300px;
+  max-width: 550px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -423,7 +481,7 @@ section.dobra {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
   z-index: 9999;
